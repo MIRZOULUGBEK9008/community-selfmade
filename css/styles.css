@@ -2,9 +2,73 @@
 :root {
   --black: #000;
   --white: #fff;
+  --section-bg: #dceaf5;
+  --orange: #f58a07;
+  --hard-blue: #1d3444;
+  --grey: #5b5b5b;
+  --dark-blue: #063255;
+  --light-blue-bg: #edf7ff;
+  --extra-light-blue: #c1e4ff;
+
+  --inter: "Inter", "Arial", sans-serif;
+  --poppins: "Poppins", "Arial", sans-serif;
 }
 
 /* FONT-FACE  */
+@font-face {
+  font-family: "Inter";
+  src: url("../fonts/Inter-Bold.woff2") format("woff2"),
+  url("../fonts/Inter-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("../fonts/Inter-Medium.woff2") format("woff2"),
+  url("../fonts/Inter-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("../fonts/Poppins-Medium.woff2") format("woff2"),
+  url("../fonts/Poppins-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("../fonts/Poppins-SemiBold.woff2") format("woff2"),
+  url("../fonts/Poppins-SemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("../fonts/Poppins-Regular.woff2") format("woff2"),
+  url("../fonts/Poppins-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("../fonts/Inter-SemiBold.woff2") format("woff2"),
+  url("../fonts/Inter-SemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
 
 /* LOADER  */
 .loader-wrapper {
@@ -27,7 +91,7 @@
 .loader {
   width: 4.8rem;
   height: 4.8rem;
-  border: 0.5rem dotted var(--black);
+  border: 0.5rem dotted var(--dark-blue);
   border-radius: 50%;
   display: inline-block;
   position: relative;
@@ -64,10 +128,10 @@ body {
   flex-direction: column;
   height: 100%;
   background-color: var(--white);
-  color: var(--black);
-  font-family: "Arial", sans-serif;
-  font-size: 1.6rem;
-  line-height: 1.5;
+  color: var(--grey);
+  font-family: var(--poppins);
+  font-size: 1.8rem;
+  line-height: 1.66;
   padding: 0;
   margin: 0;
 }
@@ -80,13 +144,13 @@ img {
 
 /* FOCUS-STYLES  */
 *:focus {
-  outline: 0.3rem dashed var(--black);
+  outline: 0.3rem dashed var(--orange);
   outline-offset: 0.3rem;
 }
 
 /* CONTAINER  */
 .container {
-  max-width: 120rem;
+  max-width: 132rem;
   width: 100%;
   padding-left: 2rem;
   padding-right: 2rem;
