@@ -10,6 +10,7 @@
   --extra-dark-blue: #394149;
   --light-blue-bg: #edf7ff;
   --extra-light-blue: #c1e4ff;
+  --extra-dark-blue-2: #0d1317;
 
   --inter: "Inter", "Arial", sans-serif;
   --poppins: "Poppins", "Arial", sans-serif;
@@ -304,7 +305,6 @@ select:-webkit-autofill:focus {
 
 .site-header__logo {
   margin-right: auto;
-  padding-right: 3rem;
 }
 
 .site-header__button {
@@ -505,4 +505,61 @@ select:-webkit-autofill:focus {
   text-decoration: none;
   transition: opacity 0.3s ease;
   color: var(--white);
+}
+
+
+/* PRIVACY-POLICY */
+.section-privacy__container {
+  width: 100%;
+  padding-top: 10.8rem;
+  padding-bottom: 12.8rem;
+  max-width: 75.2rem;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 1.6rem;
+  line-height: 1.75;
+}
+
+.section-privacy__title {
+  text-transform: capitalize;
+  font-size: 6.4rem;
+  margin-bottom: 2.4rem;
+  color: var(--hard-blue);
+}
+
+.section-privacy__time {
+  color: var(--grey);
+  margin-bottom: 4.8rem;
+}
+
+.section-privacy__privacy {
+  margin-bottom: 4rem;
+}
+
+.privacy-content__description:not(:last-child) {
+  margin-bottom: 2.4rem;
+}
+
+.section-privacy__policy-cover {
+  margin-bottom: 4rem;
+}
+
+.policy-cover__title {
+  font-size: 2.4rem;
+  margin-bottom: 2.4rem;
+  color: var(--extra-dark-blue-2);
+  font-weight: 500;
+}
+
+.policy-cover__description:not(:last-child) {
+  margin-bottom: 2.4rem;
+}
+
+.collect__title {
+  font-size: 2.4rem;
+  margin-bottom: 2.4rem;
+  color: var(--extra-dark-blue-2);
+  font-weight: 500;
+}
+.collect__description {
 }
