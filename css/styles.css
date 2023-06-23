@@ -326,6 +326,32 @@ select:-webkit-autofill:focus {
   color: var(--white);
 }
 
+.site-footer--orange {
+  position: relative;
+}
+
+.site-footer--orange::before {
+  position: absolute;
+  right: 0;
+  top: 3.8rem;
+  content: "";
+  height: 28.5rem;
+  width: 5.3rem;
+  background-color: var(--orange);
+  border-radius: 2rem 0 0 2rem;
+}
+
+.site-footer--orange::after {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  content: "";
+  height: 14.4rem;
+  width: 5.3rem;
+  background-color: var(--orange);
+  border-radius: 0 2rem 0 0;
+}
+
 .site-footer__container {
   padding: 8rem 0;
 }
