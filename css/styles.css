@@ -7,6 +7,7 @@
   --hard-blue: #1d3444;
   --grey: #5b5b5b;
   --dark-blue: #063255;
+  --extra-dark-blue: #394149;
   --light-blue-bg: #edf7ff;
   --extra-light-blue: #c1e4ff;
 
@@ -145,7 +146,7 @@ img {
 /* FOCUS-STYLES  */
 *:focus {
   outline: 0.3rem dashed var(--orange);
-  outline-offset: 0.3rem;
+  outline-offset: 0.4rem;
 }
 
 /* CONTAINER  */
@@ -175,4 +176,106 @@ img {
 /* MAIN-CONTENT  */
 .main-content {
   flex-grow: 1;
+}
+
+
+/* SITE-LOGO  */
+.logo {
+  display: flex;
+  flex-shrink: 0;
+  transition: opacity 0.3s ease;
+}
+
+.logo:hover {
+  opacity: 0.8;
+}
+
+.logo:active {
+  opacity: 0.6;
+}
+
+.logo__img {
+  display: block;
+  width: rem;
+  height: rem;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* SITENAV-LIST  */
+.sitenav__list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.sitenav__item:not(:last-child) {
+  margin-right: 3.2rem;
+}
+
+.sitenav__link {
+  display: block;
+  text-decoration: none;
+  white-space: nowrap;
+  color: var(--extra-dark-blue);
+  font-family: var(--poppins);
+  text-transform: capitalize;
+  font-size: 1.6rem;
+  line-height: 1.5;
+  font-weight: 600;
+  transition: color 0.3s ease,
+  opacity 0.3s ease;
+}
+
+.sitenav__link:hover {
+  color: var(--orange);
+}
+
+.sitenav__link:active {
+  opacity: 0.6;
+}
+
+.sitenav__link--active {
+  color: var(--orange);
+}
+
+
+/* BUTTON  */
+.button {
+  white-space: nowrap;
+  border-radius: 3.1rem;
+  text-align: center;
+  background-color: var(--orange);
+  color: var(--white);
+  font-size: 1.6rem;
+  line-height: 1.06;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+
+/* SITE-HEADER */
+.site-header {
+  background-color: var(--white);
+}
+
+.site-header__container {
+  display: flex;
+  align-items: center;
+  padding-top: 1.6rem;
+  padding-bottom: 1.6rem;
+}
+
+.site-header__logo {
+  margin-right: auto;
+  padding-right: 3rem;
+}
+
+.site-header__button {
+  min-width: 17.3rem;
+  color: var(--orange);
+  background-color: rgb(245, 138, 7, 0.1);
+  margin-left: 40px;
+  padding: 1.8rem;
 }
