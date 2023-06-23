@@ -259,6 +259,7 @@ select:-webkit-autofill:focus {
 
 /* BUTTON  */
 .button {
+  display: inline-block;
   padding: 1.8rem;
   white-space: nowrap;
   border-radius: 3.1rem;
@@ -288,6 +289,7 @@ select:-webkit-autofill:focus {
   font-family: var(--poppins);
   margin-top: 0;
   line-height: 1.22;
+  color: var(--hard-blue);
 }
 
 
@@ -587,5 +589,164 @@ select:-webkit-autofill:focus {
   color: var(--extra-dark-blue-2);
   font-weight: 500;
 }
-.collect__description {
+
+
+/* SITE-HOME-HERO */
+.site-hero-home {
+  background-color: var(--section-bg);
+  background-image: url(../img/home-hero-bg.png);
+  background-repeat: no-repeat;
+  background-position: calc(50% + 34rem) bottom
+}
+
+.site-hero-home__container {
+  padding-top: 11.7rem;
+  padding-bottom: 14.7rem;
+}
+
+.site-hero-home__content {
+  width: 100%;
+  max-width: 60rem;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 5.6rem;
+}
+
+.site-hero-home__title {
+  margin-bottom: 1.2rem;
+  font-size: 6.4rem;
+}
+
+.site-hero-home__description {
+  margin-top: 0;
+  margin-bottom: 3.2rem;
+}
+
+.site-hero-home__buttons {
+  display: flex;
+  align-items: center;
+}
+
+.site-hero-home__button--transparent {
+  margin-left: 4rem;
+  padding: 0;
+  color: var(--hard-blue);
+  background-color: transparent;
+  border-radius: 0;
+}
+
+.site-hero-home__companies {
+  --extra-dark-blue: rgb(57, 65, 73, 0.5);
+  color: var(--extra-dark-blue);
+  margin-bottom: 1.8rem;
+}
+
+.site-hero-home__company-logos {
+  display: block;
+  width: 51rem;
+  height: 3.3rem;
+  object-fit: contain;
+  object-position: center;
+}
+
+
+/* SECTION-SOFTWARE-SOLUTION  */
+.section-software-solution {
+  background-color: var(--section-bg);
+}
+
+.section-software-solution__container {
+  padding-top: 9.6rem;
+  padding-bottom: 9.6rem;
+}
+
+.section-software-solution__content {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 6.4rem;
+}
+
+.section-software-solution__title {
+  font-size: 3.6rem;
+  padding-right: 4rem;
+  margin-bottom: 0;
+  color: var(--extra-dark-blue-2);
+}
+
+.section-software-solution__description {
+  width: 100%;
+  max-width: 62rem;
+  margin: 0 0 0 auto;
+}
+
+.section-software-solution__grid {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -3.8rem 0 0 -3.8rem;
+  padding: 0;
+  list-style: none;
+}
+
+.section-software-solution__item {
+  width: calc((100% / 3) - 3.8rem);
+  background-color: var(--white);
+  border-radius: 2rem;
+  margin-left: 3.8rem;
+  margin-bottom: 3.8rem;
+}
+
+.solution-grid-item__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 4.5rem;
+}
+
+.solution-grid-item__img {
+  display: block;
+  object-fit: contain;
+  object-position: center;
+  margin-bottom: 3.2rem;
+}
+
+.solution-grid-item__title {
+  margin-bottom: 1.6rem;
+  font-size: 2.4rem;
+  line-height: 1.06;
+}
+
+.solution-grid-item__description {
+  margin: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* MEDIA-QUERIE-IMAGES  */
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) {
+  .site-hero-home {
+    background-image: url(../img/home-hero-bg.png);
+  }
+
+
 }
